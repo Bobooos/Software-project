@@ -55,7 +55,6 @@ Responsibilities:
 
   Portion: 25%
 <br>
-
 - Cheng Siyuan(P2211283):Scrum Master
 Responsibilities:
   - Facilitates sprint planning, daily stand-ups, and sprint reviews
