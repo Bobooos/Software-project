@@ -1,0 +1,52 @@
+<html>
+    {% load static %}
+<head>
+    <meta charset="utf-8">
+    <title>Weather app</title>
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+    <script src="{% static 'ServerSide.js' %}"></script>
+    <script src="{% static 'ClientSide.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        let cityList = []; // Array to store city data
+        // Fetch city list data from JSON file
+        fetch('{% static "city.list.json" %}')
+            .then(response => response.json())
+            .then(data => {
+                cityList = data;
+            });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class='WeatherCondition'>
+            <div id="city"></div>
+            <div class="weatherInfoandicon">
+                <div class="weatherInfo">
+                    <span id="time"></span>
+                    <div id="weather"></div>
+                    <div id="temp"></div>
+                    <div id="other"></div>
+                </div>
+                <div>
+                    <img src="http://openweathermap.org/img/wn/01d.png" id="weatherIcon">
+                </div>
+            </div>
+            <div>futureweather:</div>
+            <canvas id="weatherChart"></canvas>
+            <div id="Reminder"></div>
+        </div>
+        <div class='map'>
+            <span>    </span>
+            <input id="searchCity" type="text" name="city" placeholder="type in a city" oninput="showResults()"/>
+            <div id="searchResults"></div>
+            <button onclick="searchWeather()">Search</button>
+            <select id="ChangeUnit" name="cars" onchange="switchUnit(this.value)">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+            </select>
+            <div id = "map"></div>
+        </div>
+    </div>
+</body>
+</html>

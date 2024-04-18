@@ -1,0 +1,124 @@
+
+.background-image-div {
+    background-image: url('image.jpg'); /* Set the background image to image.jpg */
+    background-size: cover; /* Let the background image cover the entire div */
+    width: 200px;
+    height: 200px;
+}
+
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2016/01/02/01/51/clouds-1117584_1280.jpg'); /* Set the background image of the entire web page to background.jpg */
+    background-size: cover; /* Let the background image fill the entire web page */
+    background-repeat: no-repeat; /* Prevent background image duplication */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: stretch; /* Make the left and right parts the same height */
+    justify-content: space-between;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.WeatherCondition {
+    background-color: rgb(64, 209, 209, 0.5);
+    width: 47%; 
+    height: 610px;
+    border: 2px solid rgba(60, 206, 255, 0.201);
+    border-radius: 15px;
+    padding: 10px;
+    display: flex; /* Using Flexbox layout */
+    flex-direction: column; /* vertical arrangement */
+    justify-content: flex-start; /* left aligned */
+    align-items: flex-start; /* vertical center alignment */
+    margin-right: 5px;
+    min-width: 300px; /* 设置最小宽度 */
+    max-width: 50%;
+}
+
+.weatherInfo {
+    display: flex; /* Same as above */
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+.weatherInfoandicon{
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="text"]{
+    border: hidden;
+    border-radius: 4px;
+    outline: none;
+}
+
+select{
+    border: hidden;
+    outline: none;
+}
+
+#time, #weather {
+    margin-bottom: 10px; 
+}
+
+#weatherIcon {
+    width: 300%;
+    margin-top: 20px;
+    margin-left: auto; /* Align the image to the right */
+}
+button{
+    color: rgb(5, 60, 116);
+    background-color: aqua;
+    border: 0px solid rgb(60, 206, 255);
+    border-radius: 4px;
+}
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+button:active {
+    background-color: rgb(60, 206, 255);
+    box-shadow: 0 5px rgb(5, 60, 116);
+    transform: translateY(1px);
+}
+.map {
+    width: 70%; /* Adjust the width of the right side to occupy more screen space */
+    height: 625px;
+    border: 2px solid rgba(0, 128, 0, 0.272);
+    border-radius: 15px;
+    background-color: rgb(64, 209, 209, 0.5);
+    padding-left: 10px;
+    padding-top: 5px;
+}
+#map {
+    width: 97%; /* Let the map width fill the container */
+    height: 93%;
+    padding-top: 5px;
+}
+
+#searchResults {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+}
+.result {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.result :hover{
+    background-color: #727272;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .WeatherCondition, .map {
+        width: 100%;
+    }
+}
