@@ -47,21 +47,22 @@ This software is positioned as high-end customized software and its target marke
 - Continuously iterate through development, testing, and delivery of increments based on user feedback and changing requirements.
 - Emphasize improvements in software functionality and user experience, with a focus on meeting the needs of outdoor enthusiasts and weather professionals.
  ### 3.2 Members (Roles & Responsibilities & Portion)
-- Aiden(P2211605):Product Owner
+- Aiden(P2211605):Product Owner,
 Responsibilities:
   - Owns the product vision and roadmap
   - Prioritizes the product backlog
   - Accepts completed work
+    
   Portion: 25%
-<br>
-- Cheng Siyuan(P2211283):Scrum Master
+
+- Cheng Siyuan(P2211283):Scrum Master,
 Responsibilities:
   - Facilitates sprint planning, daily stand-ups, and sprint reviews
   - Ensures the team follows agile principles and practices
 
   Portion: 25%
   <br>
-- Eason(P2211449):Developer 1
+- Eason(P2211449):Developer 1,
 Responsibilities:
   - Writes, tests, and maintains code
   - Participates in code reviews and pair programming
@@ -69,7 +70,7 @@ Responsibilities:
 
   Portion: 15%
   <br>
-- Rent(P2211301):Developer 2
+- Rent(P2211301):Developer 2,
 Responsibilities:
   - Writes, tests, and maintains code
   - Participates in code reviews and pair programming
@@ -77,7 +78,7 @@ Responsibilities:
 
   Portion: 15%
   <br>
-- Nemo(P2211380):Tester
+- Nemo(P2211380):Tester,
 Responsibilities:
   - Designs and executes test cases
   - Finds and reports defects
