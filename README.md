@@ -52,7 +52,6 @@ Responsibilities:
   - Owns the product vision and roadmap
   - Prioritizes the product backlog
   - Accepts completed work
-
   Portion: 25%
 <br>
 - Cheng Siyuan(P2211283):Scrum Master
